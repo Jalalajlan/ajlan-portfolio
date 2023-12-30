@@ -1,0 +1,7 @@
+.wrapper {
+  font-family: "Inter";
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 6rem 20rem 0rem 20rem;
+}
