@@ -9,6 +9,7 @@
 }
 
 body {
+  overflow-x: hidden;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -42,4 +43,14 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+::selection {
+  color: black;
+  background: lightgrey;
+}
+
+::-moz-selection {
+  color: black;
+  background: lightgrey;
 }

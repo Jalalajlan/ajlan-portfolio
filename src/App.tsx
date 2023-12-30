@@ -12,6 +12,10 @@ const App = () => {
       <Sidebar />
       <MainContent>
         <About />
+        <About />
+        <About />
+        <About />
+        <About />
         <Experience />
       </MainContent>
     </Wrapper>
