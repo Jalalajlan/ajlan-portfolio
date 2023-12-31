@@ -1,43 +1,52 @@
-import { Project, experienceList } from "./../Data/experience-list";
 import CallMadeIcon from "@material-ui/icons/CallMade";
 import LinkIcon from "@material-ui/icons/Link";
+import React, { RefObject } from "react";
 import "../styles/Experience.css";
-import React from "react";
+import {
+  Contribution,
+  Skill,
+  experiencesList,
+} from "./../Data/experience-list";
 
-const Experience: React.FC = () => {
-  const renderProjects = (projects: Project[]) => {
+interface ExperienceProps {
+  forwardedRef?: RefObject<HTMLDivElement>;
+}
+
+const Experience: React.FC<ExperienceProps> = ({ forwardedRef }) => {
+  const renderProjects = (projects: Contribution[]) => {
     if (projects.length === 0) {
       return null;
     }
     return (
-      <div className="experience-projects">
+      <div ref={forwardedRef} className="experience-projects">
         {projects.map((project) => (
           <div key={project.name} className="experience-project">
-            <a
-              href={project.link}
-              target="_blank"
+            <div
               className="experience-project-link"
+              onClick={() => window.open(project.link, "_blank")}
             >
               <LinkIcon style={{ fontSize: "12px" }} className="link-icon" />
               {project.name}
-            </a>
+            </div>
           </div>
         ))}
       </div>
     );
   };
 
-  const renderSkills = (skills: String[]) => (
+  const renderSkills = (skills: Skill[]) => (
     <div className="experience-skills">
       {skills.map((skill) => (
-        <span className="experience-skill">{skill}</span>
+        <span key={skill.id} className="experience-skill">
+          {skill.name}
+        </span>
       ))}
     </div>
   );
 
   return (
     <section className="experience-section">
-      {experienceList.map((experience) => {
+      {experiencesList.map((experience) => {
         return (
           <a
             key={experience.id}

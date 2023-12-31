@@ -1,6 +1,11 @@
-export interface Project {
+export interface Contribution {
   name: string;
   link: string;
+}
+
+export interface Skill {
+  id: number;
+  name: string;
 }
 
 interface Experience {
@@ -10,12 +15,12 @@ interface Experience {
   position: string;
   company: string;
   description: string;
-  projects: Project[];
-  skills: string[];
+  projects: Contribution[];
+  skills: Skill[];
   link: string;
 }
 
-export const experienceList: Experience[] = [
+export const experiencesList: Experience[] = [
   {
     id: 1,
     stateDate: "2018",
@@ -26,13 +31,22 @@ export const experienceList: Experience[] = [
       "Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Every town for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.",
     projects: [],
     skills: [
-      "React",
-      "React Native",
-      "SCSS",
-      "WordPress",
-      "JavaScript",
-      "TypeScript",
-      "PHP",
+      {
+        id: 1,
+        name: "React",
+      },
+      {
+        id: 2,
+        name: "React Native",
+      },
+      {
+        id: 3,
+        name: "JavaScript",
+      },
+      {
+        id: 4,
+        name: "TypeScript",
+      },
     ],
     link: "https://upstatement.com/",
   },
@@ -58,7 +72,24 @@ export const experienceList: Experience[] = [
         link: "https://developer.apple.com/documentation/musickitjs",
       },
     ],
-    skills: ["Ember", "SCSS", "JavaScript", "MusicKit.js"],
+    skills: [
+      {
+        id: 1,
+        name: "React",
+      },
+      {
+        id: 2,
+        name: "React Native",
+      },
+      {
+        id: 3,
+        name: "JavaScript",
+      },
+      {
+        id: 4,
+        name: "TypeScript",
+      },
+    ],
     link: "https://upstatement.com/",
   },
   {
@@ -70,7 +101,24 @@ export const experienceList: Experience[] = [
     description:
       "Collaborated with other student designers and engineers on pro-bono projects to create new brands, design systems, and websites for organizations in the community.",
     projects: [],
-    skills: ["Jekyll", "SCSS", "JavaScript", "WordPress"],
+    skills: [
+      {
+        id: 1,
+        name: "React",
+      },
+      {
+        id: 2,
+        name: "React Native",
+      },
+      {
+        id: 3,
+        name: "JavaScript",
+      },
+      {
+        id: 4,
+        name: "TypeScript",
+      },
+    ],
     link: "https://upstatement.com/",
   },
 ];

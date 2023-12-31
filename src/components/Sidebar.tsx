@@ -4,7 +4,12 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import "../styles/Sidebar.css";
 
-const Sidebar = () => {
+interface SidebarProps {
+  activeTab: string | null;
+}
+
+const Sidebar: React.FC<SidebarProps> = ({ activeTab }) => {
+  console.log(activeTab);
   return (
     <header className="sidebar">
       <section className="sidebar__intro">
