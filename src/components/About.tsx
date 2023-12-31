@@ -1,6 +1,7 @@
+import React from "react";
 import "../styles/About.css";
 
-const About = () => {
+const About: React.FC = () => {
   return (
     <p className="about">
       Back in 2012, I decided to try my hand at creating custom Tumblr themes

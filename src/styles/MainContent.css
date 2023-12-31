@@ -1,6 +1,5 @@
 .main-content {
-  width: 50%;
+  width: 60%;
   align-self: flex-start;
   padding: 1rem;
-  border: 1px solid black;
 }

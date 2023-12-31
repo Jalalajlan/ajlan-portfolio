@@ -1,0 +1,105 @@
+.experience-section {
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.experience-section .experience-wrapper {
+  text-decoration: none;
+  color: black;
+}
+
+.experience-item {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 2rem;
+  transition: background-color 0.2s ease;
+  border-radius: 10px;
+}
+
+.experience-item:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.experience-item:hover .experience-position .arrow-icon {
+  color: brown;
+  transform: translate(5px, -5px);
+}
+
+.experience-item:hover .experience-position,
+.experience-item:hover .experience-skill {
+  color: brown;
+}
+
+.experience-date {
+  min-width: 18%;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: rgb(41, 41, 41);
+  margin-top: 0.25rem;
+}
+
+.experience-position {
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.experience-position .arrow-icon {
+  transition: transform 0.2s ease;
+  font-size: 14px;
+}
+
+.experience-description {
+  margin-top: 0.45rem;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.65;
+  color: rgb(68, 68, 68);
+}
+
+.experience-projects {
+  margin-top: 0.6rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.experience-project .experience-project-link {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  color: black;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.experience-project .experience-project-link:hover {
+  color: brown;
+}
+
+.link-icon {
+  transform: rotate(-45deg);
+}
+
+.experience-skills {
+  margin-top: 0.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.26rem;
+}
+
+.experience-skill {
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: lightgrey;
+}
