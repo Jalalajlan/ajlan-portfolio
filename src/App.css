@@ -5,17 +5,3 @@
   justify-content: space-around;
   margin: 6rem 20rem 0rem 20rem;
 }
-
-.cursor {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  z-index: -1000;
-  border-radius: 50%;
-  background-image: radial-gradient(
-    50% 50% at 50% 50%,
-    #d6d6d6 0%,
-    rgba(217, 217, 217, 0) 100%
-  );
-  transition: left 0.1s ease, top 0.1s ease;
-}
