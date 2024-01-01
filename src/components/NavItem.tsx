@@ -1,4 +1,4 @@
-import { appStyles } from "../styles/styles";
+import { scrollTo } from "../utils/utils";
 
 interface NavItemProps {
   name: string;
@@ -7,19 +7,14 @@ interface NavItemProps {
 }
 
 const NavItem: React.FC<NavItemProps> = ({ name, sectionId, activeTab }) => {
-  const scrollTo = () => {
-    const section = document.getElementById(sectionId);
-    section?.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
   return (
     <li>
       <a
-        style={activeTab === name ? appStyles.active : undefined}
+        className={activeTab === name ? "active-tab" : ""}
         href={`#${sectionId}`}
-        onClick={scrollTo}
+        onClick={() => scrollTo(sectionId)}
       >
+        <span className={activeTab === name ? "active-indicator" : ""}></span>
         {name.toUpperCase()}
       </a>
     </li>

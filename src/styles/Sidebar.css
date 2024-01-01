@@ -1,33 +1,32 @@
 header {
-  width: 40%;
-  min-height: calc(100vh - 6rem);
+  width: auto;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-self: flex-start;
   justify-content: space-between;
-  padding: 0rem 3rem 5rem 3rem;
+  padding: 5% 3%;
   position: sticky;
-  top: 6rem;
+  top: 0;
 }
 
-.sidebar__name {
+.sidebar-name {
   font-size: 3rem;
-
   font-weight: 900;
 }
 
-.sidebar__title {
+.sidebar-title {
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.75;
 }
 
-.sidebar__summary {
+.sidebar-summary {
   margin-top: 0.5rem;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.75;
-  color: grey;
+  color: var(--muted-text-col);
   max-width: 20rem;
 }
 
@@ -47,14 +46,43 @@ nav ul li {
 
 nav ul li a {
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
-  color: Black;
+  color: var(--muted-text-col);
   letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
 }
 
-.sidebar__social-media > a {
-  color: black;
+.sidebar-socials a {
+  color: var(--muted-text-col);
   text-decoration: none;
   margin-right: 1rem;
+  transition: color 0.2s ease;
+}
+
+.sidebar-socials a:hover {
+  color: var(--primary-col);
+}
+
+nav ul li a span {
+  width: 2rem;
+  height: 1px;
+  background: var(--muted-text-col);
+  display: inline-block;
+  margin-right: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.active-tab,
+nav ul li a:hover {
+  color: var(--primary-col);
+  font-weight: 700;
+}
+
+.active-indicator,
+nav ul li a:hover span {
+  width: 3.5rem;
+  height: 1.1px;
+  background-color: var(--primary-col);
 }

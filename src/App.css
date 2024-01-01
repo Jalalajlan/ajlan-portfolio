@@ -2,6 +2,17 @@
   font-family: "Inter";
   max-width: 100%;
   display: flex;
-  justify-content: space-around;
-  margin: 6rem 20rem 0rem 20rem;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Mobile */
+@media only screen and (max-width: 599px) {
+}
+
+/* Tablet */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+}
+
+@media screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 }

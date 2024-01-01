@@ -46,4 +46,56 @@ export const projectsList: Project[] = [
     link: "https://upstatement.com/",
     imagePath: projectWork,
   },
+  // {
+  //   id: 3,
+  //   name: "Build a Spotify Connected App",
+  //   description:
+  //     "Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.",
+  //   skills: [
+  //     {
+  //       id: 1,
+  //       name: "React",
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "React Native",
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "JavaScript",
+  //     },
+  //     {
+  //       id: 4,
+  //       name: "TypeScript",
+  //     },
+  //   ],
+  //   link: "https://upstatement.com/",
+  //   imagePath: projectWork,
+  // },
+  // {
+  //   id: 4,
+  //   name: "Build a Spotify Connected App",
+  //   description:
+  //     "Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.",
+  //   skills: [
+  //     {
+  //       id: 1,
+  //       name: "React",
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "React Native",
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "JavaScript",
+  //     },
+  //     {
+  //       id: 4,
+  //       name: "TypeScript",
+  //     },
+  //   ],
+  //   link: "https://upstatement.com/",
+  //   imagePath: projectWork,
+  // },
 ];
