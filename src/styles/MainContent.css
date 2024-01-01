@@ -2,4 +2,7 @@
   width: 60%;
   align-self: flex-start;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }

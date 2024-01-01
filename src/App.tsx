@@ -1,7 +1,8 @@
+import useIntersectionObserver from "./hooks/useIntersectionObserver";
 import CursorBoxTracker from "./components/CursorBoxTracker";
 import MainContent from "./components/MainContent";
 import Experience from "./components/Experience";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import Projects from "./components/Project";
 import Sidebar from "./components/Sidebar";
 import Wrapper from "./components/Wrapper";
@@ -14,42 +15,23 @@ const App = () => {
 
   const aboutRef = useRef(null);
   const experienceRef = useRef(null);
-  const projectsRef = useRef();
+  const projectsRef = useRef(null);
 
-  useEffect(() => {
-    const observerOptions = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.5,
-    };
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.9,
+  };
 
-    const observerCallback = (entries: any) => {
-      entries.forEach((entry: any) => {
-        if (entry.isIntersecting) {
-          if (entry.target === aboutRef.current) {
-            setActiveTab("about");
-          } else if (entry.target === experienceRef.current) {
-            setActiveTab("experience");
-          } else if (entry.target === projectsRef.current) {
-            setActiveTab("projects");
-          }
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(
-      observerCallback,
-      observerOptions
-    );
-
-    if (aboutRef.current) observer.observe(aboutRef.current);
-    if (experienceRef.current) observer.observe(experienceRef.current);
-    if (projectsRef.current) observer.observe(projectsRef.current);
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
+  useIntersectionObserver(
+    {
+      about: aboutRef,
+      experience: experienceRef,
+      projects: projectsRef,
+    },
+    setActiveTab,
+    observerOptions
+  );
 
   return (
     <React.Fragment>
@@ -58,7 +40,7 @@ const App = () => {
         <MainContent>
           <About forwardedRef={aboutRef} />
           <Experience forwardedRef={experienceRef} />
-          <Projects />
+          <Projects forwardedRef={projectsRef} />
         </MainContent>
       </Wrapper>
       <CursorBoxTracker />

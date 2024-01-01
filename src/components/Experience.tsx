@@ -18,7 +18,7 @@ const Experience: React.FC<ExperienceProps> = ({ forwardedRef }) => {
       return null;
     }
     return (
-      <div ref={forwardedRef} className="experience-projects">
+      <div className="experience-projects">
         {projects.map((project) => (
           <div key={project.name} className="experience-project">
             <div
@@ -45,7 +45,7 @@ const Experience: React.FC<ExperienceProps> = ({ forwardedRef }) => {
   );
 
   return (
-    <section className="experience-section">
+    <section ref={forwardedRef} className="experience-section">
       {experiencesList.map((experience) => {
         return (
           <a

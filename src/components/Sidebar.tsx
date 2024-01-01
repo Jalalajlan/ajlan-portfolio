@@ -9,6 +9,10 @@ interface SidebarProps {
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ activeTab }) => {
+  const activeStyles = {
+    color: "brown",
+    textDecoration: "underline",
+  };
   console.log(activeTab);
   return (
     <header className="sidebar">
@@ -21,13 +25,22 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab }) => {
         <nav>
           <ul>
             <li>
-              <a href="#">ABOUT</a>
+              <a style={activeTab === "about" ? activeStyles : {}} href="#">
+                ABOUT
+              </a>
             </li>
             <li>
-              <a href="#">EXPERIENCE</a>
+              <a
+                style={activeTab === "experience" ? activeStyles : {}}
+                href="#"
+              >
+                EXPERIENCE
+              </a>
             </li>
             <li>
-              <a href="#">PROJECTS</a>
+              <a style={activeTab === "projects" ? activeStyles : {}} href="#">
+                PROJECTS
+              </a>
             </li>
           </ul>
         </nav>

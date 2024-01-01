@@ -1,10 +1,14 @@
 import CallMadeIcon from "@material-ui/icons/CallMade";
 import { projectsList } from "../Data/projects-list";
 import { Skill } from "../Data/experience-list";
+import React, { RefObject } from "react";
 import "../styles/Projects.css";
-import React from "react";
 
-const Projects: React.FC = () => {
+interface ProjectProps {
+  forwardedRef?: RefObject<HTMLDivElement>;
+}
+
+const Projects: React.FC<ProjectProps> = ({ forwardedRef }) => {
   const renderSkills = (skills: Skill[]) => (
     <div className="project-skills">
       {skills.map((skill) => (
@@ -16,7 +20,7 @@ const Projects: React.FC = () => {
   );
 
   return (
-    <section className="projects-section">
+    <section ref={forwardedRef} className="projects-section">
       {projectsList.map((project) => {
         return (
           <a
