@@ -2,6 +2,7 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import NavItem from "./NavItem";
 import "../styles/Sidebar.css";
 
 interface SidebarProps {
@@ -9,11 +10,6 @@ interface SidebarProps {
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ activeTab }) => {
-  const activeStyles = {
-    color: "brown",
-    textDecoration: "underline",
-  };
-  console.log(activeTab);
   return (
     <header className="sidebar">
       <section className="sidebar__intro">
@@ -24,24 +20,17 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab }) => {
         </p>
         <nav>
           <ul>
-            <li>
-              <a style={activeTab === "about" ? activeStyles : {}} href="#">
-                ABOUT
-              </a>
-            </li>
-            <li>
-              <a
-                style={activeTab === "experience" ? activeStyles : {}}
-                href="#"
-              >
-                EXPERIENCE
-              </a>
-            </li>
-            <li>
-              <a style={activeTab === "projects" ? activeStyles : {}} href="#">
-                PROJECTS
-              </a>
-            </li>
+            <NavItem activeTab={activeTab} name="about" sectionId="about" />
+            <NavItem
+              activeTab={activeTab}
+              name="experience"
+              sectionId="experience"
+            />
+            <NavItem
+              activeTab={activeTab}
+              name="projects"
+              sectionId="projects"
+            />
           </ul>
         </nav>
       </section>

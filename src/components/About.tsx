@@ -7,7 +7,7 @@ interface AboutProps {
 
 const About: React.FC<AboutProps> = ({ forwardedRef }) => {
   return (
-    <div ref={forwardedRef} className="about">
+    <div ref={forwardedRef} id="about">
       Back in 2012, I decided to try my hand at creating custom Tumblr themes
       and tumbled head first into the rabbit hole of coding and web development.
       Fast-forward to today, and I’ve had the privilege of building software for

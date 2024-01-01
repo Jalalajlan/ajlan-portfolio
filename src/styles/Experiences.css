@@ -1,8 +1,8 @@
-.experience-section {
+#experience {
   width: 100%;
 }
 
-.experience-section .experience-wrapper {
+#experience .experience-wrapper {
   text-decoration: none;
   color: black;
 }
@@ -86,19 +86,4 @@
 
 .link-icon {
   transform: rotate(-45deg);
-}
-
-.experience-skills {
-  margin-top: 0.6rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.26rem;
-}
-
-.experience-skill {
-  padding: 0.3rem 0.6rem;
-  border-radius: 20px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  background-color: lightgrey;
 }
