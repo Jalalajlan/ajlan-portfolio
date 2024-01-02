@@ -1,3 +1,4 @@
+import useDeviceDetection from "../hooks/useDeviceDetection";
 import { experiencesList } from "../Data/experience-list";
 import CallMadeIcon from "@material-ui/icons/CallMade";
 import ExperienceProject from "./ExperienceProject";
@@ -10,8 +11,11 @@ interface ExperiencesProps {
 }
 
 const Experiences: React.FC<ExperiencesProps> = ({ forwardedRef }) => {
+  const isMobile = useDeviceDetection();
+
   return (
     <section ref={forwardedRef} id="experience">
+      {isMobile ? <h3 className="experience-title">EXPERIENCE</h3> : null}
       {experiencesList.map((experience) => {
         return (
           <a
@@ -19,7 +23,7 @@ const Experiences: React.FC<ExperiencesProps> = ({ forwardedRef }) => {
             href={experience.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="experience-wrapper"
+            className="experience-link"
           >
             <div className="experience-item">
               <p className="experience-date">

@@ -1,3 +1,4 @@
+import useDeviceDetection from "../hooks/useDeviceDetection";
 import CallMadeIcon from "@material-ui/icons/CallMade";
 import { projectsList } from "../Data/projects-list";
 import React, { RefObject } from "react";
@@ -9,8 +10,11 @@ interface ProjectsProps {
 }
 
 const Projects: React.FC<ProjectsProps> = ({ forwardedRef }) => {
+  const isMobile = useDeviceDetection();
+
   return (
     <section ref={forwardedRef} id="projects">
+      {isMobile ? <h3 className="projects-title">PROJECTS</h3> : null}
       {projectsList.map((project) => {
         return (
           <a
@@ -18,7 +22,7 @@ const Projects: React.FC<ProjectsProps> = ({ forwardedRef }) => {
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="project-wrapper"
+            className="project-link"
           >
             <div className="project-item">
               <img

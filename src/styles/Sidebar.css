@@ -86,3 +86,15 @@ nav ul li a:hover span {
   height: 1.1px;
   background-color: var(--primary-col);
 }
+
+@media (max-width: 599px) {
+  header {
+    width: auto;
+    min-height: auto;
+    position: relative;
+  }
+
+  .sidebar-socials {
+    margin-top: 1.5rem;
+  }
+}

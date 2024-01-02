@@ -1,6 +1,21 @@
 #about {
-  font-size: 1rem;
-  font-size: 600;
-  line-height: 1.6;
   padding: 6rem 2rem 0rem 2rem;
+}
+
+#about .about-title {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem 0rem;
+}
+
+#about .about-description {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+@media (max-width: 599px) {
+  #about {
+    padding: 0.85rem;
+  }
 }

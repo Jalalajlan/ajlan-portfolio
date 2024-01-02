@@ -2,7 +2,13 @@
   width: 100%;
 }
 
-#experience .experience-wrapper {
+#experience .experience-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-left: 0.85rem;
+}
+
+#experience .experience-link {
   text-decoration: none;
   color: black;
 }
@@ -86,4 +92,18 @@
 
 .link-icon {
   transform: rotate(-45deg);
+}
+
+@media (max-width: 599px) {
+  #experience {
+    padding: 1rem 0rem;
+  }
+
+  .experience-item {
+    gap: 0.5rem;
+    border-radius: 0px;
+    flex-direction: column;
+    padding: 1.5rem 0.85rem;
+    margin-bottom: 0.5rem;
+  }
 }

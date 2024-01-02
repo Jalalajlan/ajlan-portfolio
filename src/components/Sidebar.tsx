@@ -1,14 +1,18 @@
+import useDeviceDetection from "../hooks/useDeviceDetection";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import EmailIcon from "@material-ui/icons/Email";
 import NavItem from "./NavItem";
 import "../styles/Sidebar.css";
+import React from "react";
 
 interface SidebarProps {
   activeTab: string | null;
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ activeTab }) => {
+  const isMobile = useDeviceDetection();
+
   return (
     <header className="sidebar">
       <section className="sidebar-intro">
@@ -17,7 +21,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab }) => {
         <p className="sidebar-summary">
           I build pixel-perfect, accessible products for the web and beyond.
         </p>
-        <nav>
+        <nav className={isMobile ? "hide" : ""}>
           <ul>
             <NavItem activeTab={activeTab} name="about" sectionId="about" />
             <NavItem
