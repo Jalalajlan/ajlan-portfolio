@@ -16,6 +16,8 @@
 body {
   overflow-x: hidden;
   line-height: 1.5;
+  display: flex;
+  justify-content: center;
   -webkit-font-smoothing: antialiased;
 }
 
