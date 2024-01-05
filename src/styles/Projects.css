@@ -43,11 +43,11 @@
 }
 
 .project-image {
-  min-width: 18%;
-  height: 70px;
+  min-width: 20%;
+  height: 75px;
   object-fit: fill;
   border-radius: 5px;
-  border: 1px solid grey;
+  border: 1px solid lightgrey;
   transition: border 0.2s ease;
   margin-top: 0.25rem;
 }
@@ -57,7 +57,7 @@
   font-weight: 600;
   display: flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.75rem;
 }
 
 .project-name .arrow-icon {

@@ -28,11 +28,11 @@ export const experiencesList: Experience[] = [
     position: "Software Engineer",
     company: "Huacomm",
     description:
-      "Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Every town for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.",
+      "Developed complex software features, including e-billing and real-time chat system. Optimized a React-based web application, resulting in a 50% increase in performance and improved user experience. Gathered customer requirements, conducted system training and provided ongoing customer support. Ensured close collaboration with other engineers through open dialogue and knowledge sharing. Identified and resolved critical software in-production bugs.",
     projects: [
       {
         name: "ProConnect",
-        link: "https://play.google.com/store/apps/details?id=com.proConnect.android",
+        link: "https://www.proconnect.com.my/",
       },
       {
         name: "JSA Leagues",
@@ -66,7 +66,7 @@ export const experiencesList: Experience[] = [
       },
       {
         id: 6,
-        name: "MYSQL",
+        name: "MySQL",
       },
       {
         id: 7,
@@ -90,8 +90,17 @@ export const experiencesList: Experience[] = [
     position: "Software Engineer Intern",
     company: "Huacomm",
     description:
-      "Developed and styled interactive web apps for Apple Music, including the UI of Apple Music’s embeddable web player widget for in-browser user authorization and full song playback.",
-    projects: [],
+      "Developed and maintained ProConnect mobile app for Android & IOS utilizing Flutter. Implemented iterative improvements on ProConnect to achieve seamless user experience. Overseen ProConnect features, and suggested features enhancements. Implemented clean architecture to ensure code quality and maintainability.",
+    projects: [
+      {
+        name: "ProConnect App - Android",
+        link: "https://play.google.com/store/apps/details?id=com.proConnect.android",
+      },
+      {
+        name: "ProConnect App - IOS",
+        link: "https://apps.apple.com/th/app/proconnect-home-app/id6444507776",
+      },
+    ],
     skills: [
       {
         id: 1,
@@ -119,7 +128,7 @@ export const experiencesList: Experience[] = [
     position: "Part-time Web Developer",
     company: "khairuk",
     description:
-      "Collaborated with other student designers and engineers on pro-bono projects to create new brands, design systems, and websites for organizations in the community.",
+      "Engineered modern web applications with Java, JavaScript, and SQL. Supported Khairuk's development and testing processes. Actively participated in team meetings, suggesting improvements to the client's products. Delivered high-quality work before deadlines for reviewing.",
     projects: [
       {
         name: "Khairuk.org",
@@ -129,18 +138,22 @@ export const experiencesList: Experience[] = [
     skills: [
       {
         id: 1,
-        name: "HTML & CSS",
+        name: "Java",
       },
       {
         id: 2,
-        name: "JavaScript",
+        name: "MySQL",
       },
       {
         id: 3,
-        name: "WordPress",
+        name: "HTML & CSS",
       },
       {
         id: 4,
+        name: "JavaScript",
+      },
+      {
+        id: 5,
         name: "Jquery",
       },
     ],

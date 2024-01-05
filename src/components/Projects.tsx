@@ -1,6 +1,7 @@
 import useDeviceDetection from "../hooks/useDeviceDetection";
 import CallMadeIcon from "@material-ui/icons/CallMade";
 import { projectsList } from "../Data/projects-list";
+import { GitHub } from "@material-ui/icons";
 import React, { RefObject } from "react";
 import SkillsComponent from "./Skills";
 import "../styles/Projects.css";
@@ -33,6 +34,10 @@ const Projects: React.FC<ProjectsProps> = ({ forwardedRef }) => {
               <div>
                 <p className="project-name">
                   {project.name}
+                  <GitHub
+                    fontSize="small"
+                    onClick={() => window.open(project.repoLink, "_blank")}
+                  />
                   <CallMadeIcon className="arrow-icon" />
                 </p>
                 <p className="project-description">{project.description}</p>

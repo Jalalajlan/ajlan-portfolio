@@ -1,7 +1,7 @@
 import servicifyMobileImage from "../assets/images/servicify-mobile-image.jpg";
 import servicifyWebImage from "../assets/images/servicify-web-image.png";
 import portfolioImage from "../assets/images/jalal_portfolio.png";
-import projectWork from "../assets/images/course-card.jpg";
+import projectWork from "../assets/images/coming_soon.jpg";
 import { Skill } from "./experience-list";
 
 interface Project {
@@ -10,6 +10,7 @@ interface Project {
   description: string;
   skills: Skill[];
   link: string;
+  repoLink: string;
   imagePath: string;
 }
 
@@ -18,7 +19,7 @@ export const projectsList: Project[] = [
     id: 1,
     name: "Real-time Video Conferencing App",
     description:
-      "Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.",
+      "Leveraged the power of WebRTC and Socket.io build a video chat app. App features include the ability to host meetings with other people, invite people to your hosted rooms with an invitation link, and write real-time messages in video rooms.",
     skills: [
       {
         id: 1,
@@ -38,13 +39,14 @@ export const projectsList: Project[] = [
       },
     ],
     link: "#",
+    repoLink: "https://github.com/Jalalajlan/coding_hub_realtime",
     imagePath: projectWork,
   },
   {
     id: 2,
     name: "Servicify Web App",
     description:
-      "Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.",
+      "Servicify is a service exchange platform that enables everyone to post their needs or request a service provider for the operation. On the other side, service providers may propose solutions to clients' needs with competitive pricing, and ultimately, customers will decide which proposal most fits their requirements and proceed with it. This is the web app version.",
     skills: [
       {
         id: 1,
@@ -64,13 +66,15 @@ export const projectsList: Project[] = [
       },
     ],
     link: "https://serivicfy.onrender.com/",
+    repoLink:
+      "https://github.com/App-development-SCSJ3104-Group-project/Servicify",
     imagePath: servicifyWebImage,
   },
   {
     id: 3,
     name: "Servicify Mobile App",
     description:
-      "Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.",
+      "Servicify is a service exchange platform that enables everyone to post their needs or request a service provider for the operation. On the other side, service providers may propose solutions to clients' needs with competitive pricing, and ultimately, customers will decide which proposal most fits their requirements and proceed with it. This is the mobile app version.",
     skills: [
       {
         id: 1,
@@ -82,13 +86,14 @@ export const projectsList: Project[] = [
       },
     ],
     link: "https://play.google.com/store/apps/details?id=com.fatsha.e_service_app",
+    repoLink: "https://github.com/Elraqab-Organization/eService_app",
     imagePath: servicifyMobileImage,
   },
   {
     id: 4,
-    name: "Portfolio Web",
+    name: "Portfolio Web App",
     description:
-      "Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.",
+      "A totally new portfolio website has been developed to serve as a showcase of my diverse array of work, providing a comprehensive guide to my skills, achievements, and endeavors.",
     skills: [
       {
         id: 1,
@@ -99,8 +104,8 @@ export const projectsList: Project[] = [
         name: "TypeScript",
       },
     ],
-    // TODO Update portfolio link
-    link: "https://play.google.com/store/apps/details?id=com.fatsha.e_service_app",
+    link: "#",
+    repoLink: "https://github.com/Jalalajlan/ajlan-portfolio",
     imagePath: portfolioImage,
   },
 ];
