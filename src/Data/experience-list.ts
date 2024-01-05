@@ -23,102 +23,127 @@ interface Experience {
 export const experiencesList: Experience[] = [
   {
     id: 1,
-    stateDate: "2018",
-    endDate: "PRESENT",
-    position: "Lead Engineer",
-    company: "Upstatement",
+    stateDate: "Mar 2023",
+    endDate: "Nov 2023",
+    position: "Software Engineer",
+    company: "Huacomm",
     description:
       "Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Every town for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.",
-    projects: [],
+    projects: [
+      {
+        name: "ProConnect",
+        link: "https://play.google.com/store/apps/details?id=com.proConnect.android",
+      },
+      {
+        name: "JSA Leagues",
+        link: "https://play.google.com/store/apps/details?id=com.jsaleagues.android",
+      },
+      {
+        name: "ALOF",
+        link: "https://alof.life/",
+      },
+    ],
     skills: [
       {
         id: 1,
-        name: "React",
+        name: "JavaScript",
       },
       {
         id: 2,
-        name: "React Native",
+        name: "Flutter/Dart",
       },
       {
         id: 3,
-        name: "JavaScript",
+        name: "React.js",
       },
       {
         id: 4,
         name: "TypeScript",
       },
+      {
+        id: 5,
+        name: "PHP",
+      },
+      {
+        id: 6,
+        name: "MYSQL",
+      },
+      {
+        id: 7,
+        name: "Firebase",
+      },
+      {
+        id: 8,
+        name: "REST APIs",
+      },
+      {
+        id: 9,
+        name: "UI/UX",
+      },
     ],
-    link: "https://upstatement.com/",
+    link: "https://www.proconnect.com.my/",
   },
   {
     id: 2,
-    stateDate: "JULY",
-    endDate: "DEC 2017",
-    position: "UI Engineer Co-op",
-    company: "Apple",
+    stateDate: "Aug 2022",
+    endDate: "Feb 2023",
+    position: "Software Engineer Intern",
+    company: "Huacomm",
     description:
       "Developed and styled interactive web apps for Apple Music, including the UI of Apple Music’s embeddable web player widget for in-browser user authorization and full song playback.",
-    projects: [
-      {
-        name: "MusicKit.js",
-        link: "https://developer.apple.com/documentation/musickitjs",
-      },
-      {
-        name: "9to5Mac",
-        link: "https://developer.apple.com/documentation/musickitjs",
-      },
-      {
-        name: "The Verge",
-        link: "https://developer.apple.com/documentation/musickitjs",
-      },
-    ],
-    skills: [
-      {
-        id: 1,
-        name: "React",
-      },
-      {
-        id: 2,
-        name: "React Native",
-      },
-      {
-        id: 3,
-        name: "JavaScript",
-      },
-      {
-        id: 4,
-        name: "TypeScript",
-      },
-    ],
-    link: "https://upstatement.com/",
-  },
-  {
-    id: 3,
-    stateDate: "2016",
-    endDate: "2017",
-    position: "Developer",
-    company: "Scout Studio",
-    description:
-      "Collaborated with other student designers and engineers on pro-bono projects to create new brands, design systems, and websites for organizations in the community.",
     projects: [],
     skills: [
       {
         id: 1,
-        name: "React",
+        name: "Flutter/Dart",
       },
       {
         id: 2,
-        name: "React Native",
+        name: "Android & IOS",
       },
       {
         id: 3,
+        name: "Software Testing",
+      },
+      {
+        id: 5,
+        name: "UI/UX",
+      },
+    ],
+    link: "https://www.proconnect.com.my/",
+  },
+  {
+    id: 3,
+    stateDate: "Oct 2021",
+    endDate: "May 2022",
+    position: "Part-time Web Developer",
+    company: "khairuk",
+    description:
+      "Collaborated with other student designers and engineers on pro-bono projects to create new brands, design systems, and websites for organizations in the community.",
+    projects: [
+      {
+        name: "Khairuk.org",
+        link: "https://khairuk.org/",
+      },
+    ],
+    skills: [
+      {
+        id: 1,
+        name: "HTML & CSS",
+      },
+      {
+        id: 2,
         name: "JavaScript",
       },
       {
+        id: 3,
+        name: "WordPress",
+      },
+      {
         id: 4,
-        name: "TypeScript",
+        name: "Jquery",
       },
     ],
-    link: "https://upstatement.com/",
+    link: "https://khairuk.org/",
   },
 ];

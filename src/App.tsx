@@ -20,7 +20,7 @@ const App = () => {
   const observerOptions = {
     root: null,
     rootMargin: "0px",
-    threshold: 0.8,
+    threshold: window.innerWidth > 1200 ? 0.7 : 0.5,
   };
 
   useIntersectionObserver(

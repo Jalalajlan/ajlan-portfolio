@@ -16,10 +16,10 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab }) => {
   return (
     <header className="sidebar">
       <section className="sidebar-intro">
-        <p className="sidebar-name">Brittany Chiang</p>
-        <p className="sidebar-title">Experienced Software engineer</p>
+        <p className="sidebar-name">Jalal Ajlan</p>
+        <p className="sidebar-title">Passionate Software Engineer</p>
         <p className="sidebar-summary">
-          I build pixel-perfect, accessible products for the web and beyond.
+          I'm all about coding, debugging and finding elegant solutions.
         </p>
         <nav className={isMobile ? "hide" : ""}>
           <ul>
