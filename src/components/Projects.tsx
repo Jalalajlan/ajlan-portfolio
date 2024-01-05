@@ -1,6 +1,6 @@
 import useDeviceDetection from "../hooks/useDeviceDetection";
 import CallMadeIcon from "@material-ui/icons/CallMade";
-import { projectsList } from "../Data/projects-list";
+import { projectsList } from "../data/projects-list";
 import { GitHub } from "@material-ui/icons";
 import React, { RefObject } from "react";
 import SkillsComponent from "./Skills";

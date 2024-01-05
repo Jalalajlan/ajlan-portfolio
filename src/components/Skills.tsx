@@ -1,4 +1,4 @@
-import { Skill } from "../Data/experience-list";
+import { Skill } from "../data/experience-list";
 import React from "react";
 
 interface SkillsComponentProps {

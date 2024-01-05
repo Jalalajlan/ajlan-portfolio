@@ -1,4 +1,4 @@
-import { Contribution } from "../Data/experience-list";
+import { Contribution } from "../data/experience-list";
 import LinkIcon from "@material-ui/icons/Link";
 import React from "react";
 
