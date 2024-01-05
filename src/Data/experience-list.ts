@@ -81,7 +81,7 @@ export const experiencesList: Experience[] = [
         name: "UI/UX",
       },
     ],
-    link: "https://www.proconnect.com.my/",
+    link: "http://huacomm.com.my/",
   },
   {
     id: 2,
@@ -110,7 +110,7 @@ export const experiencesList: Experience[] = [
         name: "UI/UX",
       },
     ],
-    link: "https://www.proconnect.com.my/",
+    link: "http://huacomm.com.my/",
   },
   {
     id: 3,

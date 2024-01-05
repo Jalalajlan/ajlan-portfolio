@@ -6,6 +6,7 @@ import React, { useRef, useState } from "react";
 import Projects from "./components/Projects";
 import Sidebar from "./components/Sidebar";
 import Wrapper from "./components/Wrapper";
+import Footer from "./components/footer";
 import About from "./components/About";
 import "./styles/fonts.css";
 import "./App.css";
@@ -41,6 +42,7 @@ const App = () => {
           <About forwardedRef={aboutRef} />
           <Experiences forwardedRef={experiencesRef} />
           <Projects forwardedRef={projectsRef} />
+          <Footer />
         </MainContent>
       </Wrapper>
       <CursorBoxTracker />

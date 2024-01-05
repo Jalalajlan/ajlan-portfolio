@@ -1,0 +1,16 @@
+.footer {
+  color: var(--muted-text-col);
+  text-align: center;
+  font-size: 0.85rem;
+  margin-bottom: 2rem;
+}
+
+.footer a {
+  color: var(--muted-text-col);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer a:hover {
+  color: var(--primary-col);
+}
