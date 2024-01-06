@@ -2,19 +2,15 @@ import useDeviceDetection from "../hooks/useDeviceDetection";
 import { experiencesList } from "../data/experience-list";
 import CallMadeIcon from "@material-ui/icons/CallMade";
 import ExperienceProject from "./ExperienceProject";
-import React, { RefObject } from "react";
 import SkillsComponent from "./Skills";
 import "../styles/Experiences.css";
+import React from "react";
 
-interface ExperiencesProps {
-  forwardedRef?: RefObject<HTMLDivElement>;
-}
-
-const Experiences: React.FC<ExperiencesProps> = ({ forwardedRef }) => {
+const Experiences: React.FC = () => {
   const isMobile = useDeviceDetection();
 
   return (
-    <section ref={forwardedRef} id="experience">
+    <section id="experience">
       {isMobile ? <h3 className="experience-title">EXPERIENCE</h3> : null}
       {experiencesList.map((experience) => {
         return (

@@ -1,16 +1,11 @@
 import useDeviceDetection from "../hooks/useDeviceDetection";
-import { RefObject } from "react";
 import "../styles/About.css";
 
-interface AboutProps {
-  forwardedRef?: RefObject<HTMLDivElement>;
-}
-
-const About: React.FC<AboutProps> = ({ forwardedRef }) => {
+const About: React.FC = () => {
   const isMobile = useDeviceDetection();
 
   return (
-    <div ref={forwardedRef} id="about">
+    <div id="about">
       {isMobile ? <h3 className="about-title">ABOUT</h3> : null}
       <p className="about-description">
         From a young age, I have always had a passion for coding, fueled by the

@@ -2,19 +2,15 @@ import useDeviceDetection from "../hooks/useDeviceDetection";
 import CallMadeIcon from "@material-ui/icons/CallMade";
 import { projectsList } from "../data/projects-list";
 import { GitHub } from "@material-ui/icons";
-import React, { RefObject } from "react";
 import SkillsComponent from "./Skills";
 import "../styles/Projects.css";
+import React from "react";
 
-interface ProjectsProps {
-  forwardedRef?: RefObject<HTMLDivElement>;
-}
-
-const Projects: React.FC<ProjectsProps> = ({ forwardedRef }) => {
+const Projects: React.FC = () => {
   const isMobile = useDeviceDetection();
 
   return (
-    <section ref={forwardedRef} id="projects">
+    <section id="projects">
       {isMobile ? <h3 className="projects-title">PROJECTS</h3> : null}
       {projectsList.map((project) => {
         return (
