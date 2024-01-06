@@ -6,7 +6,9 @@ const Footer: React.FC = () => {
     <p className="footer">
       Website{" "}
       <b>
-        <a href="https://code.visualstudio.com/">Github repository</a>
+        <a href="https://github.com/Jalalajlan/ajlan-portfolio">
+          Github repository
+        </a>
       </b>
       . Built with{" "}
       <b>

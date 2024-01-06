@@ -104,7 +104,7 @@ export const projectsList: Project[] = [
         name: "TypeScript",
       },
     ],
-    link: "#",
+    link: "https://jalalajlan.netlify.app/",
     repoLink: "https://github.com/Jalalajlan/ajlan-portfolio",
     imagePath: portfolioImage,
   },
