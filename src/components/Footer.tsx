@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     <p className="footer">
       Website{" "}
       <b>
-        <a href="https://github.com/Jalalajlan/ajlan-portfolio">
+        <a href="https://github.com/Jalalajlan/ajlan-portfolio" target="_blank">
           Github repository
         </a>
       </b>
