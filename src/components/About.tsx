@@ -20,9 +20,9 @@ const About: React.FC<AboutProps> = ({ forwardedRef }) => {
         software.
         <br />
         <br />I have a <b> degree in Software Engineering </b> backed up by{" "}
-        <b>2+ years of practical experience</b> with a focus on building robust,
-        high-quality software and solving business problems. I've used a variety
-        of programming languages including{" "}
+        <b>1.4 years of practical experience</b> with a focus on building
+        robust, high-quality software and solving business problems. I've used a
+        variety of programming languages including{" "}
         <b> JavaScript, Java, Dart, and PHP.</b>
         <br />
         <br />

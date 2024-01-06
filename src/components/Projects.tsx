@@ -34,10 +34,12 @@ const Projects: React.FC<ProjectsProps> = ({ forwardedRef }) => {
               <div>
                 <p className="project-name">
                   {project.name}
-                  <GitHub
-                    fontSize="small"
-                    onClick={() => window.open(project.repoLink, "_blank")}
-                  />
+                  {project.hasRepository && (
+                    <GitHub
+                      fontSize="small"
+                      onClick={() => window.open(project.repoLink, "_blank")}
+                    />
+                  )}
                   <CallMadeIcon className="arrow-icon" />
                 </p>
                 <p className="project-description">{project.description}</p>

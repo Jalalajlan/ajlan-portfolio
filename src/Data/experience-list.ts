@@ -121,42 +121,4 @@ export const experiencesList: Experience[] = [
     ],
     link: "http://huacomm.com.my/",
   },
-  {
-    id: 3,
-    stateDate: "Oct 2021",
-    endDate: "May 2022",
-    position: "Part-time Web Developer",
-    company: "khairuk",
-    description:
-      "Engineered modern web applications with Java, JavaScript, and SQL. Supported Khairuk's development and testing processes. Actively participated in team meetings, suggesting improvements to the client's products. Delivered high-quality work before deadlines for reviewing.",
-    projects: [
-      {
-        name: "Khairuk.org",
-        link: "https://khairuk.org/",
-      },
-    ],
-    skills: [
-      {
-        id: 1,
-        name: "Java",
-      },
-      {
-        id: 2,
-        name: "MySQL",
-      },
-      {
-        id: 3,
-        name: "HTML & CSS",
-      },
-      {
-        id: 4,
-        name: "JavaScript",
-      },
-      {
-        id: 5,
-        name: "Jquery",
-      },
-    ],
-    link: "https://khairuk.org/",
-  },
 ];
