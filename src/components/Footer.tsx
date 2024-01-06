@@ -12,11 +12,15 @@ const Footer: React.FC = () => {
       </b>
       . Built with{" "}
       <b>
-        <a href="https://react.dev/">React.js</a>
+        <a href="https://react.dev/" target="_blank">
+          React.js
+        </a>
       </b>
       , and deployed with{" "}
       <b>
-        <a href="https://www.netlify.com/">Netlify</a>
+        <a href="https://www.netlify.com/" target="_blank">
+          Netlify
+        </a>
       </b>{" "}
       .
     </p>
