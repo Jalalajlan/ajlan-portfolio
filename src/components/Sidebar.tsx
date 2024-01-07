@@ -1,12 +1,12 @@
 import useDeviceDetection from "../hooks/useDeviceDetection";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import useTranslation from "../hooks/useTranslation";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import EmailIcon from "@material-ui/icons/Email";
+import LangHandler from "./LangHandler";
 import NavItem from "./NavItem";
 import "../styles/Sidebar.css";
 import React from "react";
-import useTranslation from "../hooks/useTranslation";
-import LangHandler from "./LangHandler";
 
 interface SidebarProps {
   activeTab: string | null;
@@ -21,20 +21,22 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab }) => {
       <section className="sidebar-intro">
         <p className="sidebar-name">{translation.fullName}</p>
         <p className="sidebar-title">{translation.position}</p>
-        <p className="sidebar-summary">
-          I'm all about coding, debugging and finding elegant solutions.
-        </p>
+        <p className="sidebar-summary">{translation.summary}</p>
         <nav className={isMobile ? "hide" : ""}>
           <ul>
-            <NavItem activeTab={activeTab} name="about" sectionId="about" />
             <NavItem
               activeTab={activeTab}
-              name="experience"
+              name={translation.about}
+              sectionId="about"
+            />
+            <NavItem
+              activeTab={activeTab}
+              name={translation.experience}
               sectionId="experience"
             />
             <NavItem
               activeTab={activeTab}
-              name="projects"
+              name={translation.projects}
               sectionId="projects"
             />
           </ul>
