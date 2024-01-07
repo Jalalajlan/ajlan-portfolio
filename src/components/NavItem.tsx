@@ -10,11 +10,13 @@ const NavItem: React.FC<NavItemProps> = ({ name, sectionId, activeTab }) => {
   return (
     <li>
       <a
-        className={activeTab === name ? "active-tab" : ""}
+        className={activeTab === sectionId ? "active-tab" : ""}
         href={`#${sectionId}`}
         onClick={() => scrollTo(sectionId)}
       >
-        <span className={activeTab === name ? "active-indicator" : ""}></span>
+        <span
+          className={activeTab === sectionId ? "active-indicator" : ""}
+        ></span>
         {name.toUpperCase()}
       </a>
     </li>
