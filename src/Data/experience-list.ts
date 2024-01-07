@@ -23,12 +23,11 @@ interface Experience {
 export const experiencesList: Experience[] = [
   {
     id: 1,
-    stateDate: "Mar 2023",
-    endDate: "Nov 2023",
-    position: "Software Engineer",
-    company: "Huacomm",
-    description:
-      "Developed complex software features, including e-billing and real-time chat system. Optimized a React-based web application, resulting in a 50% increase in performance and improved user experience. Gathered customer requirements, conducted system training and provided ongoing customer support. Ensured close collaboration with other engineers through open dialogue and knowledge sharing. Identified and resolved critical software in-production bugs.",
+    stateDate: "startDate1",
+    endDate: "endDate1",
+    position: "position1",
+    company: "company1",
+    description: "description1",
     projects: [
       {
         name: "ProConnect",
@@ -85,12 +84,11 @@ export const experiencesList: Experience[] = [
   },
   {
     id: 2,
-    stateDate: "Aug 2022",
-    endDate: "Feb 2023",
-    position: "Software Engineer Intern",
-    company: "Huacomm",
-    description:
-      "Developed and maintained ProConnect mobile app for Android & IOS utilizing Flutter. Implemented iterative improvements on ProConnect to achieve seamless user experience. Overseen ProConnect features, and suggested features enhancements. Implemented clean architecture to ensure code quality and maintainability.",
+    stateDate: "startDate2",
+    endDate: "endDate2",
+    position: "position2",
+    company: "company2",
+    description: "description2",
     projects: [
       {
         name: "ProConnect App - Android",

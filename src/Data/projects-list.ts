@@ -18,9 +18,8 @@ interface Project {
 export const projectsList: Project[] = [
   {
     id: 1,
-    name: "Real-time Video Conferencing App",
-    description:
-      "Leveraged the power of WebRTC and Socket.io build a video chat app. App features include the ability to host meetings with other people, invite people to your hosted rooms with an invitation link, and write real-time messages in video rooms.",
+    name: "projectName1",
+    description: "projectDescription1",
     skills: [
       {
         id: 1,
@@ -46,9 +45,8 @@ export const projectsList: Project[] = [
   },
   {
     id: 2,
-    name: "Khairuk website",
-    description:
-      "This landing page was developed for an NGO organization using WordPress and a tech stack that includes HTML, CSS, JavaScript, and jQuery. The site also includes integration with Google Sheets and geocoding APIs.",
+    name: "projectName2",
+    description: "projectDescription2",
     skills: [
       {
         id: 1,
@@ -74,9 +72,8 @@ export const projectsList: Project[] = [
   },
   {
     id: 3,
-    name: "Servicify Web App",
-    description:
-      "Servicify is a service exchange platform that enables everyone to post their needs or request a service provider for the operation. On the other side, service providers may propose solutions to clients' needs with competitive pricing, and ultimately, customers will decide which proposal most fits their requirements and proceed with it. This is the web app version.",
+    name: "projectName3",
+    description: "projectDescription3",
     skills: [
       {
         id: 1,
@@ -103,9 +100,8 @@ export const projectsList: Project[] = [
   },
   {
     id: 5,
-    name: "Portfolio Web App",
-    description:
-      "A totally new portfolio website has been developed to serve as a showcase of my diverse array of work, providing a comprehensive guide to my skills, achievements, and endeavors.",
+    name: "projectName4",
+    description: "projectDescription4",
     skills: [
       {
         id: 1,

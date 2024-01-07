@@ -5,13 +5,17 @@ import { GitHub } from "@material-ui/icons";
 import SkillsComponent from "./Skills";
 import "../styles/Projects.css";
 import React from "react";
+import useTranslation from "../hooks/useTranslation";
 
 const Projects: React.FC = () => {
+  const translation = useTranslation();
   const isMobile = useDeviceDetection();
 
   return (
     <section id="projects">
-      {isMobile ? <h3 className="projects-title">PROJECTS</h3> : null}
+      {isMobile ? (
+        <h3 className="projects-title">{translation.projects}</h3>
+      ) : null}
       {projectsList.map((project) => {
         return (
           <a
@@ -29,7 +33,7 @@ const Projects: React.FC = () => {
               />
               <div>
                 <p className="project-name">
-                  {project.name}
+                  {(translation as any)[project.name]}
                   {project.hasRepository && (
                     <GitHub
                       fontSize="small"
@@ -38,7 +42,9 @@ const Projects: React.FC = () => {
                   )}
                   <CallMadeIcon className="arrow-icon" />
                 </p>
-                <p className="project-description">{project.description}</p>
+                <p className="project-description">
+                  {(translation as any)[project.description]}
+                </p>
                 <SkillsComponent skills={project.skills} />
               </div>
             </div>

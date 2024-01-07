@@ -1,27 +1,29 @@
+import useTranslation from "../hooks/useTranslation";
 import "../styles/Footer.css";
 import React from "react";
 
 const Footer: React.FC = () => {
+  const translation = useTranslation();
   return (
     <p className="footer">
-      Website{" "}
+      {(translation as any).website}{" "}
       <b>
         <a href="https://github.com/Jalalajlan/ajlan-portfolio" target="_blank">
-          Github repository
+          {(translation as any).githubRepository}
         </a>
       </b>
-      . Built with{" "}
+      . {(translation as any).builtWith}{" "}
       <b>
         <a href="https://react.dev/" target="_blank">
           React.js
         </a>
       </b>
-      , and deployed with{" "}
+      , {(translation as any).andDeployedWith}{" "}
       <b>
         <a href="https://www.netlify.com/" target="_blank">
           Netlify
         </a>
-      </b>{" "}
+      </b>
       .
     </p>
   );
