@@ -54,6 +54,12 @@ nav ul li a {
   align-items: center;
 }
 
+.sidebar-socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .sidebar-socials a {
   color: var(--muted-text-col);
   text-decoration: none;
@@ -85,6 +91,18 @@ nav ul li a:hover span {
   width: 3.5rem;
   height: 1.1px;
   background-color: var(--primary-col);
+}
+
+.lang-section {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+}
+
+.lang-section p {
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: var(--muted-text-col);
 }
 
 @media (max-width: 599px) {
