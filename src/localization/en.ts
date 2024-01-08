@@ -18,7 +18,7 @@ export default {
   position2: "Software Engineer Intern",
   company2: "Huacomm",
   description2:
-    "Developed and maintained ProConnect mobile app for Android & IOS utilizing Flutter. Implemented iterative improvements on ProConnect to achieve seamless user experience. Overseen ProConnect features, and suggested features enhancements. Implemented clean architecture to ensure code quality and maintainability.",
+    "Developed and maintained the ProConnect mobile app (Android and iOS) utilizing Flutter. Performed feature flow, user experience, and the app’s performance iterative optimizations for greater user satisfaction with a focus on the customer’s point of view.  Collaborated with seniors’ engineers to engineer new feature requirements requests from the company’s app clients, ensuring seamless integration and alignment with user needs. Implemented a clean architecture with unit and integration, cutting down bugs significantly and boosting development speed, and was recognized for maintaining excellent code quality.",
 
   projectName1: "Real-time Video Conferencing App",
   projectDescription1:

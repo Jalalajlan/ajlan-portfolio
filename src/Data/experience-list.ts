@@ -61,22 +61,26 @@ export const experiencesList: Experience[] = [
       },
       {
         id: 5,
-        name: "PHP",
+        name: "Java",
       },
       {
         id: 6,
-        name: "MySQL",
+        name: "PHP",
       },
       {
         id: 7,
-        name: "Firebase",
+        name: "MySQL",
       },
       {
         id: 8,
-        name: "REST APIs",
+        name: "Firebase",
       },
       {
         id: 9,
+        name: "REST APIs",
+      },
+      {
+        id: 10,
         name: "UI/UX",
       },
     ],
