@@ -1,5 +1,5 @@
 import useDeviceDetection from "../hooks/useDeviceDetection";
-import { experiencesList } from "../data/experience-list";
+import experiencesList from "./../data/experience-list";
 import CallMadeIcon from "@material-ui/icons/CallMade";
 import useTranslation from "../hooks/useTranslation";
 import ExperienceProject from "./ExperienceProject";

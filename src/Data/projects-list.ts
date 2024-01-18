@@ -1,48 +1,37 @@
 import servicifyWebImage from "../assets/images/servicify-web-image.png";
 import portfolioImage from "../assets/images/jalal_portfolio.png";
-import projectWork from "../assets/images/coming_soon.jpg";
+// import projectWork from "../assets/images/coming_soon.jpg";
 import khairukImage from "../assets/images/khairuk.png";
-import { Skill } from "./experience-list";
-
-interface Project {
-  id: number;
-  name: string;
-  description: string;
-  skills: Skill[];
-  link: string;
-  repoLink: string;
-  imagePath: string;
-  hasRepository: boolean | undefined;
-}
+import Project from "./../types/Project";
 
 export const projectsList: Project[] = [
-  {
-    id: 1,
-    name: "projectName1",
-    description: "projectDescription1",
-    skills: [
-      {
-        id: 1,
-        name: "React.js",
-      },
-      {
-        id: 2,
-        name: "Node.js",
-      },
-      {
-        id: 3,
-        name: "Socket.io",
-      },
-      {
-        id: 4,
-        name: "WebRTC",
-      },
-    ],
-    link: "#",
-    repoLink: "https://github.com/Jalalajlan/coding_hub_realtime",
-    imagePath: projectWork,
-    hasRepository: true,
-  },
+  // {
+  //   id: 1,
+  //   name: "projectName1",
+  //   description: "projectDescription1",
+  //   skills: [
+  //     {
+  //       id: 1,
+  //       name: "React.js",
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Node.js",
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "Socket.io",
+  //     },
+  //     {
+  //       id: 4,
+  //       name: "WebRTC",
+  //     },
+  //   ],
+  //   link: "#",
+  //   repoLink: "https://github.com/Jalalajlan/coding_hub_realtime",
+  //   imagePath: projectWork,
+  //   hasRepository: true,
+  // },
   {
     id: 2,
     name: "projectName2",

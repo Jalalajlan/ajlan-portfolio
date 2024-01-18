@@ -1,11 +1,11 @@
 import useDeviceDetection from "../hooks/useDeviceDetection";
 import CallMadeIcon from "@material-ui/icons/CallMade";
 import { projectsList } from "../data/projects-list";
+import useTranslation from "../hooks/useTranslation";
 import { GitHub } from "@material-ui/icons";
 import SkillsComponent from "./Skills";
 import "../styles/Projects.css";
 import React from "react";
-import useTranslation from "../hooks/useTranslation";
 
 const Projects: React.FC = () => {
   const translation = useTranslation();

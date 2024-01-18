@@ -1,26 +1,6 @@
-export interface Contribution {
-  name: string;
-  link: string;
-}
+import Experience from "./../types/Experience";
 
-export interface Skill {
-  id: number;
-  name: string;
-}
-
-interface Experience {
-  id: number;
-  stateDate: string;
-  endDate: string;
-  position: string;
-  company: string;
-  description: string;
-  projects: Contribution[];
-  skills: Skill[];
-  link: string;
-}
-
-export const experiencesList: Experience[] = [
+const experiencesList: Experience[] = [
   {
     id: 1,
     stateDate: "startDate1",
@@ -124,3 +104,5 @@ export const experiencesList: Experience[] = [
     link: "http://huacomm.com.my/",
   },
 ];
+
+export default experiencesList;

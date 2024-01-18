@@ -1,9 +1,9 @@
-import { Contribution } from "../data/experience-list";
+import WorkProject from "./../types/WorkProject";
 import LinkIcon from "@material-ui/icons/Link";
 import React from "react";
 
 interface ExperienceProjectProps {
-  projects: Contribution[];
+  projects: WorkProject[];
 }
 
 const ExperienceProject: React.FC<ExperienceProjectProps> = ({ projects }) => {
