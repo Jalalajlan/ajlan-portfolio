@@ -1,9 +1,10 @@
 import useDeviceDetection from "../hooks/useDeviceDetection";
 import CallMadeIcon from "@material-ui/icons/CallMade";
-import { projectsList } from "../data/projects-list";
 import useTranslation from "../hooks/useTranslation";
+import projectsList from "../data/projects-list";
 import { GitHub } from "@material-ui/icons";
 import SkillsComponent from "./Skills";
+import Project from "../types/Project";
 import "../styles/Projects.css";
 import React from "react";
 
@@ -16,7 +17,7 @@ const Projects: React.FC = () => {
       {isMobile ? (
         <h3 className="projects-title">{translation.projects}</h3>
       ) : null}
-      {projectsList.map((project) => {
+      {projectsList.map((project: Project) => {
         return (
           <a
             key={project.id}

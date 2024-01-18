@@ -4,7 +4,7 @@ import portfolioImage from "../assets/images/jalal_portfolio.png";
 import khairukImage from "../assets/images/khairuk.png";
 import Project from "./../types/Project";
 
-export const projectsList: Project[] = [
+const projectsList: Project[] = [
   // {
   //   id: 1,
   //   name: "projectName1",
@@ -107,3 +107,5 @@ export const projectsList: Project[] = [
     hasRepository: true,
   },
 ];
+
+export default projectsList;

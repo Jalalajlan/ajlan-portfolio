@@ -1,8 +1,9 @@
 import useDeviceDetection from "../hooks/useDeviceDetection";
-import experiencesList from "./../data/experience-list";
 import CallMadeIcon from "@material-ui/icons/CallMade";
+import experiencesList from "../data/experience-list";
 import useTranslation from "../hooks/useTranslation";
 import ExperienceProject from "./ExperienceProject";
+import Experience from "../types/Experience";
 import SkillsComponent from "./Skills";
 import "../styles/Experiences.css";
 import React from "react";
@@ -16,7 +17,7 @@ const Experiences: React.FC = () => {
       {isMobile ? (
         <h3 className="experience-title">{translation.experience}</h3>
       ) : null}
-      {experiencesList.map((experience) => {
+      {experiencesList.map((experience: Experience) => {
         return (
           <a
             key={experience.id}
