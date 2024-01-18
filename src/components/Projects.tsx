@@ -1,7 +1,7 @@
 import useDeviceDetection from "../hooks/useDeviceDetection";
 import CallMadeIcon from "@material-ui/icons/CallMade";
 import useTranslation from "../hooks/useTranslation";
-import projectsList from "../data/projects-list";
+import projectsList from "./../data/projects-list";
 import { GitHub } from "@material-ui/icons";
 import SkillsComponent from "./Skills";
 import Project from "../types/Project";
