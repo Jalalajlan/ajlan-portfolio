@@ -2,7 +2,7 @@ import servicifyWebImage from "../assets/images/servicify-web-image.png";
 import portfolioImage from "../assets/images/jalal_portfolio.png";
 // import projectWork from "../assets/images/coming_soon.jpg";
 import khairukImage from "../assets/images/khairuk.png";
-import Project from "./../types/Project";
+import Project from "../types/Project";
 
 const projectsList: Project[] = [
   // {
