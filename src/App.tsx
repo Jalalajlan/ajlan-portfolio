@@ -7,7 +7,6 @@ import Sidebar from "./components/Sidebar";
 import Wrapper from "./components/Wrapper";
 import Footer from "./components/Footer";
 import About from "./components/About";
-import "./styles/fonts.css";
 import React from "react";
 import "./App.css";
 
